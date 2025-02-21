@@ -1,20 +1,23 @@
 :root {
-  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Retro arcade font for that game feel */
+  --font-family: 'Press Start 2P', cursive, sans-serif;
   --base-font-size: 16px;
-  --line-height: 1.5;
+  --line-height: 1.2;
   --font-weight: 400;
   
-  --color-text: #E5E5E5;  
-  --background-color: #242424;  
-  --accent-color: #1e88e5; 
-  --border-color: #333; 
+  /* Dark, immersive colors with neon accents */
+  --color-text: #e0e0e0;           /* Light gray text for contrast */
+  --background-color: #0d0d0d;     /* Nearly black background */
+  --accent-color: #39ff14;         /* Neon green accent */
+  --border-color: #222;            /* Darker border color */
   
   font-family: var(--font-family);
   font-size: var(--base-font-size);
   line-height: var(--line-height);
   font-weight: var(--font-weight);
   
-  color-scheme: dark light;
+  /* Enforce dark mode to match a game aesthetic */
+  color-scheme: dark;
   color: var(--color-text);
   background-color: var(--background-color);
   
@@ -24,13 +27,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Light Mode Override */
+/* Optional Light Mode Override (kept consistent with dark theme for games) */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-text: #212121; 
-    --background-color: #f9f9f9; 
-    --accent-color: #1e88e5; 
-    --border-color: #ddd; 
+    --color-text: #e0e0e0;
+    --background-color: #0d0d0d;
+    --accent-color: #39ff14;
+    --border-color: #222;
   }
 }
 
@@ -39,4 +42,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Additional styling for interactive elements (e.g., game menu buttons) */
+button {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  color: var(--accent-color);
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
 }
