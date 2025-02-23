@@ -1,29 +1,21 @@
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div
       style={{
         width: '100vw',
         height: '100vh',
-        overflow: 'hidden',      // Prevent scrolling
-        position: 'relative',    // For absolute positioning of UI elements
+        overflow: 'hidden',      
+        position: 'relative',    
       }}
     >
-      {/* 3D Game Scene */}
       <Canvas
         style={{ width: '100%', height: '100%' }}
-        camera={{ position: [0, 2, 5] }}
+        camera={{ 
+          position: [-3, 0, 0], 
+        }}
       >
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} />
-        {/* Placeholder 3D object: A blue cube */}
-        <mesh>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial color="red" />
-        </mesh>
-        <OrbitControls />
       </Canvas>
 
       {/* UI Overlay */}
@@ -62,3 +54,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;
