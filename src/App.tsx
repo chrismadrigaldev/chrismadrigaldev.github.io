@@ -1,13 +1,13 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-const HomePage = lazy(() => import('./pages/HomePage.tsx'));
+const MainMenu = lazy(() => import('./pages/MainMenu.tsx'));
 
 export const App = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<MainMenu />} />
       </Routes>
     </Suspense>
   );

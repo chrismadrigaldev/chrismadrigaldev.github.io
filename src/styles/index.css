@@ -1,15 +1,13 @@
 :root {
-  /* Retro arcade font for that game feel */
-  --font-family: 'Press Start 2P', cursive, sans-serif;
+  --font-family: 'Almendra', serif;
   --base-font-size: 16px;
-  --line-height: 1.2;
+  --line-height: 1.5;
   --font-weight: 400;
   
-  /* Dark, immersive colors with neon accents */
-  --color-text: #e0e0e0;           /* Light gray text for contrast */
-  --background-color: #0d0d0d;     /* Nearly black background */
-  --accent-color: #39ff14;         /* Neon green accent */
-  --border-color: #222;            /* Darker border color */
+  --color-text: #e0e0e0;           
+  --background-color: #141414;     
+  --accent-color: #39ff14;         
+  --border-color: #222;            
   
   font-family: var(--font-family);
   font-size: var(--base-font-size);
@@ -42,21 +40,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Additional styling for interactive elements (e.g., game menu buttons) */
-button {
-  font-family: var(--font-family);
-  font-size: var(--base-font-size);
-  color: var(--accent-color);
-  background: transparent;
-  border: 2px solid var(--accent-color);
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-
-button:hover {
-  background: var(--accent-color);
-  color: var(--background-color);
 }
