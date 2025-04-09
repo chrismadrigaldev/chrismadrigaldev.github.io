@@ -1,4 +1,4 @@
-import { MainMenuText } from "../components/MainMenuText";
+import { MainMenuText } from "../components/main-menu/MainMenuText";
 
 const MainMenu = () => {
     return (
