@@ -6,10 +6,10 @@ import {
 export const MainMenuText = () => {
     return (
         <div style={mainMenuContainerStyle}>
-            <button style={buttonStyle}>Play</button>
-            <button style={buttonStyle}>Portfolio</button>
-            <button style={buttonStyle}>About</button>
-            <button style={buttonStyle}>Contact</button>
+            <button style={mainMenuButtonStyle}>Play</button>
+            <button style={mainMenuButtonStyle}>Portfolio</button>
+            <button style={mainMenuButtonStyle}>About</button>
+            <button style={mainMenuButtonStyle}>Contact</button>
         </div>
     );
 }
