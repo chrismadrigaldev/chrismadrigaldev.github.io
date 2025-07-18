@@ -1,17 +1,11 @@
-import { buttonStyle } from "../../styles/main-menu/mainMenuStyles";
+import { 
+	mainMenuButtonStyle, 
+	mainMenuContainerStyle 
+} from "../../styles/main-menu/mainMenuStyles";
 
 export const MainMenuText = () => {
     return (
-        <div
-            style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "20px",
-                padding: "40px"
-            }}
-        >
+        <div style={mainMenuContainerStyle}>
             <button style={buttonStyle}>Play</button>
             <button style={buttonStyle}>Portfolio</button>
             <button style={buttonStyle}>About</button>
