@@ -24,15 +24,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Optional Light Mode Override (kept consistent with dark theme for games) */
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-text: #e0e0e0;
-    --background-color: #0d0d0d;
-    --accent-color: #39ff14;
-    --border-color: #222;
-  }
+/* base (mobile first) */
+.container {
+  display: block;
+  padding: 1rem;
+  font-size: 14px;
+  flex-direction: column;
 }
+
+
+/* TODO: Fix the media queries to be more responsive */
+
+/* Extra small devices (phones) */
+@media (max-width: 639px) {
+}
+
+/* Small devices (large phones) */
+@media (min-width: 640px) and (max-width: 767px) {
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Large devices (laptops/desktops) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+}
+
+/* 2XL devices (ultrawide or 2K+) */
+@media (min-width: 1536px) {
+}
+
+
 
 /* Reset */
 * {

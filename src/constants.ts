@@ -19,7 +19,8 @@ export const DEFAULT_EXTENSIONS = [
 	'.tsx',
 	'.jsx',
 	'.mjs',
-	'.cjs'
+	'.cjs',
+	'.css'
 ];
 export const HALF = 0.5;
 export const HALF_ROTATION = 180;
