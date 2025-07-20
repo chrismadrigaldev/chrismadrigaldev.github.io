@@ -14,7 +14,6 @@
   line-height: var(--line-height);
   font-weight: var(--font-weight);
   
-  /* Enforce dark mode to match a game aesthetic */
   color-scheme: dark;
   color: var(--color-text);
   background-color: var(--background-color);

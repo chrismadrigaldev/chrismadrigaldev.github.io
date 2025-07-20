@@ -11,7 +11,9 @@
     "preview": "vite preview",
     "predeploy": "bun run build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist",
-    "full-deploy": "bun run predeploy && bun run deploy"
+    "full-deploy": "bun run predeploy && bun run deploy",
+    "remind-me": "bun run scripts/remind-me.ts"
+
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
@@ -25,6 +27,7 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^8.24.1",
